@@ -3,12 +3,13 @@ package main
 import "log"
 
 func main(){
-	err:=ZipFile("sample.txt")
-	if err !=nil{
-		log.Fatal(err)
-	}
 
-	err=CreateZipFolder("sample","sample.txt.gz")
+	// err:=CreateZipFolder("sample","sample.txt")
+	// if err !=nil{
+	// 	log.Fatal(err)
+	// }
+
+	err:=ListContentsOfZipFile("sample.zip")
 	if err !=nil{
 		log.Fatal(err)
 	}
